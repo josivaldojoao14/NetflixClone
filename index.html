@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte da LOGO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- GliderJs -->
+    <link rel="stylesheet" type="text/css" href="./style/glider/glider.css">
+
+    <!-- Estilo principal -->
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- Estilo responsivo -->
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <div class="capa">
+            <div class="container">
+                <h2 class="logo">Netflix</h2>
+                <nav>
+                    <ul class="first-nav">
+                        <li><a style="color: white;" href="#"><b>Início</b></a></li>
+                        <li><a style="color: #cecece;" href="#">Séries</a></li>
+                        <li><a style="color: #cecece;" href="#">Filmes</a></li>
+                        <li><a style="color: #cecece;" href="#">Bombando</a></li>
+                        <li><a style="color: #cecece;" href="#">Minha lista</a></li>
+                    </ul>
+                    <ul class="second-nav">
+                        <li class="lupa"><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="infantil"><a href="#">INFANTIL</a></li>
+                        <li class="sino"><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li class="user"><a href="#"><i class="fas fa-user-circle fa-lg"></i><i class="fas fa-caret-down fa-fw fa-sm"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-destaque">
+            <div class="container">
+                <img class="img-destaque" src="./img/title_destaque.png" alt="Titulo Django Livre">
+                <p class="sinopse-destaque">Django é um escravo, comprado pelo caçador de recompensas alemão Dr. King
+                    Schultz para auxiliá-lo em uma missão.
+                </p>
+
+                <div class="botoes">
+                    <button role="button" class="botao-destaque botao-principal"><i
+                            class="fas fa-play fa-fw"></i>Assistir</button>
+                    <button role="button" class="botao-destaque botao-secundario"><i
+                            class="fas fa-info-circle fa-fw"></i>Mais informações</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 class="titulo-carrossel">Em alta</h3>
+            <div class="carrossel-filmes">
+                <div class="glider-contain">
+                    <div class="glider">
+                        <div class="item"><img src="./img/mini1.jpg" alt="Capa Resident Evil"></div>
+                        <div class="item"><img src="./img/mini2.jpg" alt="Capa A guerra do amanhã"></div>
+                        <div class="item"><img src="./img/mini3.jpg" alt="Capa Loki"></div>
+                        <div class="item"><img src="./img/mini4.jpg" alt="Capa Um lugar silencioso II"></div>
+                        <div class="item"><img src="./img/mini5.jpg" alt="Capa Viuva Negra"></div>
+                        <div class="item"><img src="./img/mini6.jpg" alt="Capa Major Grom contra o Dr. Peste"></div>
+                        <div class="item"><img src="./img/mini7.jpg" alt="Capa Rua do medo 1994 pt. 1"></div>
+                        <div class="item"><img src="./img/mini8.jpg" alt="Capa Luca"></div>
+                        <div class="item"><img src="./img/mini9.jpg" alt="Capa Invocação do mal 3"></div>
+                        <div class="item"><img src="./img/mini10.jpg" alt="O poderoso chefinho 2"></div>
+                        <div class="item"><img src="./img/mini11.jpg" alt="Capa Velozes e furiosos Hobbs e Shaw"></div>
+                        <div class="item"><img src="./img/mini12.jpg" alt="Capa Mortal Kombat"></div>
+                    </div>
+
+                    <div class="botoes-carrossel">
+                        <button aria-label="Previous" class="glider-prev"><i
+                                class="fa fa-chevron-left fa-1x"></i></button>
+                        <button aria-label="Next" class="glider-next"><i class="fa fa-chevron-right fa-1x"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/5139b0321b.js" crossorigin="anonymous"></script>
+
+    <!-- GliderJs -->
+    <script src="./js/glider/glider.js"></script>
+
+    <!-- Script principal  -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

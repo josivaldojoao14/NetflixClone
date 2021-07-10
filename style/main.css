@@ -1,0 +1,182 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+    background-color: var(--preto);
+    font-family: Helvetica;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+header .logo {
+    color: var(--vermelho);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul {
+    display: inline-flex;
+    margin-left: 100px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+header nav .first-nav{
+    font-size: 15px;
+}
+
+header nav .second-nav {
+    float: right;
+    font-size: 17px;
+}
+
+/* Filme de destaque */
+.filme-destaque {
+    position: absolute;
+    font-size: 16px;
+    top: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.filme-destaque .sinopse-destaque{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 27px;
+    font-size: 20px;
+}
+
+.filme-destaque .img-destaque{
+    width: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.botao-destaque{
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-destaque i{
+    margin-right: 12px;
+}
+
+.botao-principal:hover {
+    background-color: #C1C1C1;
+}
+
+.botao-principal{
+    background-color: #FFFF;
+    color: black;
+}
+
+.botao-secundario{
+    background-color: #4E4E4E;
+}
+.botao-secundario:hover {
+    background-color: #4e4e4e8e;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+.filme-destaque .container{
+    width: 50%;
+}
+
+/* Item do carrossel */
+.item{
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.item img{
+    border-radius: 5px;
+}
+
+.botoes-carrossel .glider-next, .glider-prev{
+    top: 0;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.60);
+    height: 100%;
+}
+
+.botoes-carrossel .glider-next{
+    right: 0;
+}
+.botoes-carrossel .glider-prev{
+    left: 0;
+}
+
+.botoes-carrossel i{
+    color: white;
+    border: none;
+}
+
+.carrossel-filmes{
+    margin-top: 10px;
+}
+
+.titulo-carrossel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.capa{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/thumb-1920-674731.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 750px;
+    position: relative;
+}
